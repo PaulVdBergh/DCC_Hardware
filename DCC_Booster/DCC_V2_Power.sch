@@ -1,0 +1,1109 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L4970A
+LIBS:STPS1545CT
+LIBS:st-microelectronics
+LIBS:tsop
+LIBS:A-2014-1-4-R
+LIBS:P82B715PN
+LIBS:54601-906WPLF
+LIBS:DCC_V2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 2 6
+Title "DCC Power Supply"
+Date "2017-09-18"
+Rev "1"
+Comp "(c) 2017 - Paul Van den Bergh"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Fuse F1
+U 1 1 59BF8D50
+P 4950 8050
+F 0 "F1" V 5030 8050 50  0000 C CNN
+F 1 "6.3A" V 4875 8050 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm" V 4880 8050 50  0001 C CNN
+F 3 "" H 4950 8050 50  0001 C CNN
+	1    4950 8050
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C3
+U 1 1 59BF8FB7
+P 6150 8500
+F 0 "C3" H 6175 8600 50  0000 L CNN
+F 1 "4700µF 35V" H 5850 8350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D18.0mm_P7.50mm" H 6188 8350 50  0001 C CNN
+F 3 "" H 6150 8500 50  0001 C CNN
+	1    6150 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C6
+U 1 1 59BF90BF
+P 6750 8500
+F 0 "C6" H 6775 8600 50  0000 L CNN
+F 1 "4700µF 35V" H 6450 8350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D18.0mm_P7.50mm" H 6788 8350 50  0001 C CNN
+F 3 "" H 6750 8500 50  0001 C CNN
+	1    6750 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C7
+U 1 1 59BF9164
+P 7350 8500
+F 0 "C7" H 7375 8600 50  0000 L CNN
+F 1 "4700µF 35V" H 7050 8350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D18.0mm_P7.50mm" H 7388 8350 50  0001 C CNN
+F 3 "" H 7350 8500 50  0001 C CNN
+	1    7350 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 59BF9183
+P 7950 8500
+F 0 "C8" H 7975 8600 50  0000 L CNN
+F 1 "1µF Film" H 7800 8350 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7988 8350 50  0001 C CNN
+F 3 "" H 7950 8500 50  0001 C CNN
+	1    7950 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 8050 5300 8050
+Wire Wire Line
+	5300 8050 5300 8200
+Wire Wire Line
+	5300 8800 5300 8950
+Wire Wire Line
+	5300 8950 4500 8950
+Wire Wire Line
+	4800 8050 4500 8050
+Wire Wire Line
+	5000 8500 5000 9200
+Wire Wire Line
+	5000 9200 8450 9200
+Wire Wire Line
+	5600 8500 5600 7800
+Wire Wire Line
+	5600 7800 8450 7800
+Wire Wire Line
+	6150 8350 6150 7800
+Connection ~ 6150 7800
+Wire Wire Line
+	6750 8350 6750 7800
+Connection ~ 6750 7800
+Wire Wire Line
+	7350 8350 7350 7800
+Connection ~ 7350 7800
+Wire Wire Line
+	7950 8350 7950 7800
+Connection ~ 7950 7800
+Wire Wire Line
+	6150 8650 6150 9200
+Connection ~ 6150 9200
+Wire Wire Line
+	6750 8650 6750 9200
+Connection ~ 6750 9200
+Wire Wire Line
+	7350 8650 7350 9200
+Connection ~ 7350 9200
+Wire Wire Line
+	7950 8650 7950 9200
+Connection ~ 7950 9200
+$Comp
+L L4970A IC3
+U 1 1 59BF9793
+P 6850 2750
+F 0 "IC3" H 7650 2900 50  0000 C CNN
+F 1 "L4970A" H 7650 1900 50  0000 C CNN
+F 2 "st-microelectronics:st-microelectronics-MULTIWATT-15" H 7650 1800 50  0001 C CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00000080.pdf" H 7650 1700 50  0001 C CNN
+F 4 "L4970A, Switching Regulator, Buck Controller, 10A, Adjustable, 5.1  40 V, 500 kHz, 15-Pin MULTIWATT V" H 7650 1600 50  0001 C CNN "Description"
+F 5 "RS" H 7650 1500 50  0001 C CNN "Supplier_Name"
+F 6 "2513390" H 7650 1400 50  0001 C CNN "RS Part Number"
+F 7 "STMicroelectronics" H 7650 1300 50  0001 C CNN "Manufacturer_Name"
+F 8 "L4970A" H 7650 1200 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "70013876" H 7650 1100 50  0001 C CNN "Allied_Number"
+F 10 "" H 7650 1000 50  0001 C CNN "Other Part Number"
+F 11 "5" H 8300 900 50  0001 C CNN "Height"
+	1    6850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L L4970A IC4
+U 1 1 59BF98C6
+P 6850 5650
+F 0 "IC4" H 7650 5800 50  0000 C CNN
+F 1 "L4970A" H 7650 4800 50  0000 C CNN
+F 2 "st-microelectronics:st-microelectronics-MULTIWATT-15" H 7650 4700 50  0001 C CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00000080.pdf" H 7650 4600 50  0001 C CNN
+F 4 "L4970A, Switching Regulator, Buck Controller, 10A, Adjustable, 5.1  40 V, 500 kHz, 15-Pin MULTIWATT V" H 7650 4500 50  0001 C CNN "Description"
+F 5 "RS" H 7650 4400 50  0001 C CNN "Supplier_Name"
+F 6 "2513390" H 7650 4300 50  0001 C CNN "RS Part Number"
+F 7 "STMicroelectronics" H 7650 4200 50  0001 C CNN "Manufacturer_Name"
+F 8 "L4970A" H 7650 4100 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "70013876" H 7650 4000 50  0001 C CNN "Allied_Number"
+F 10 "" H 7650 3900 50  0001 C CNN "Other Part Number"
+F 11 "5" H 8300 3800 50  0001 C CNN "Height"
+	1    6850 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L STPS1545CT IC1
+U 1 1 59BF991B
+P 6100 3450
+F 0 "IC1" H 6550 3600 50  0000 C CNN
+F 1 "STPS1545CT" H 6550 3200 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6550 3100 50  0001 C CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00004902.pdf" H 6550 3000 50  0001 C CNN
+F 4 "STPS1545CT, Dual Schottky Diode,  7.5A max, 45V Common Cathode, Dual, 3-Pin, TO-220AB" H 6550 2900 50  0001 C CNN "Description"
+F 5 "RS" H 6550 2800 50  0001 C CNN "Supplier_Name"
+F 6 "4860244" H 6550 2700 50  0001 C CNN "RS Part Number"
+F 7 "STMicroelectronics" H 6550 2600 50  0001 C CNN "Manufacturer_Name"
+F 8 "STPS1545CT" H 6550 2500 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "70391425" H 6550 2400 50  0001 C CNN "Allied_Number"
+F 10 "" H 6550 2300 50  0001 C CNN "Other Part Number"
+F 11 "4.6" H 6850 2200 50  0001 C CNN "Height"
+	1    6100 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L STPS1545CT IC2
+U 1 1 59BF99B8
+P 6100 6350
+F 0 "IC2" H 6550 6500 50  0000 C CNN
+F 1 "STPS1545CT" H 6550 6100 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6550 6000 50  0001 C CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00004902.pdf" H 6550 5900 50  0001 C CNN
+F 4 "STPS1545CT, Dual Schottky Diode,  7.5A max, 45V Common Cathode, Dual, 3-Pin, TO-220AB" H 6550 5800 50  0001 C CNN "Description"
+F 5 "RS" H 6550 5700 50  0001 C CNN "Supplier_Name"
+F 6 "4860244" H 6550 5600 50  0001 C CNN "RS Part Number"
+F 7 "STMicroelectronics" H 6550 5500 50  0001 C CNN "Manufacturer_Name"
+F 8 "STPS1545CT" H 6550 5400 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "70391425" H 6550 5300 50  0001 C CNN "Allied_Number"
+F 10 "" H 6550 5200 50  0001 C CNN "Other Part Number"
+F 11 "4.6" H 6850 5100 50  0001 C CNN "Height"
+	1    6100 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C9
+U 1 1 59BFD894
+P 8850 3600
+F 0 "C9" H 8875 3700 50  0000 L CNN
+F 1 "2.2µF 35V" H 8600 3500 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P1.50mm" H 8888 3450 50  0001 C CNN
+F 3 "" H 8850 3600 50  0001 C CNN
+	1    8850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 59BFD909
+P 9200 3350
+F 0 "R6" V 9280 3350 50  0000 C CNN
+F 1 "7k5" V 9200 3350 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 9130 3350 50  0001 C CNN
+F 3 "" H 9200 3350 50  0001 C CNN
+	1    9200 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 59BFD946
+P 9550 3600
+F 0 "RV1" V 9375 3600 50  0000 C CNN
+F 1 "10k" V 9450 3600 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Vishay_T73XX_Vertical" H 9550 3600 50  0001 C CNN
+F 3 "" H 9550 3600 50  0001 C CNN
+	1    9550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 59BFD995
+P 9200 2950
+F 0 "R5" V 9280 2950 50  0000 C CNN
+F 1 "4k7" V 9200 2950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 9130 2950 50  0001 C CNN
+F 3 "" H 9200 2950 50  0001 C CNN
+	1    9200 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 2950 9050 2950
+Wire Wire Line
+	9350 2950 9800 2950
+Wire Wire Line
+	9800 2950 9800 3600
+Wire Wire Line
+	9800 3600 9700 3600
+Wire Wire Line
+	9550 3450 9550 3350
+Wire Wire Line
+	9550 3350 9350 3350
+Wire Wire Line
+	8450 3350 9050 3350
+Wire Wire Line
+	8850 3450 8850 3350
+Connection ~ 8850 3350
+$Comp
+L CP C14
+U 1 1 59BFDAE5
+P 10550 3600
+F 0 "C14" H 10575 3700 50  0000 L CNN
+F 1 "2.2µF 35V" H 10300 3500 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P1.50mm" H 10588 3450 50  0001 C CNN
+F 3 "" H 10550 3600 50  0001 C CNN
+	1    10550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3050 10550 3050
+Wire Wire Line
+	10550 3050 10550 3450
+$Comp
+L R R9
+U 1 1 59BFDB4F
+P 10950 3600
+F 0 "R9" V 11030 3600 50  0000 C CNN
+F 1 "10k" V 10950 3600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 10880 3600 50  0001 C CNN
+F 3 "" H 10950 3600 50  0001 C CNN
+	1    10950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C16
+U 1 1 59BFDB8E
+P 10950 3150
+F 0 "C16" H 10975 3250 50  0000 L CNN
+F 1 "22nF" H 10975 3050 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 10988 3000 50  0001 C CNN
+F 3 "" H 10950 3150 50  0001 C CNN
+	1    10950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C19
+U 1 1 59BFDBCD
+P 11350 3600
+F 0 "C19" H 11375 3700 50  0000 L CNN
+F 1 "390pF" H 11375 3500 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 11388 3450 50  0001 C CNN
+F 3 "" H 11350 3600 50  0001 C CNN
+	1    11350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2850 11350 2850
+Wire Wire Line
+	11350 2850 11350 3450
+Wire Wire Line
+	10950 3000 10950 2850
+Connection ~ 10950 2850
+Wire Wire Line
+	10950 3300 10950 3450
+$Comp
+L R R3
+U 1 1 59BFDCB6
+P 8850 2500
+F 0 "R3" V 8930 2500 50  0000 C CNN
+F 1 "24k" V 8850 2500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 8780 2500 50  0001 C CNN
+F 3 "" H 8850 2500 50  0001 C CNN
+	1    8850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2650 8850 2950
+Connection ~ 8850 2950
+Wire Wire Line
+	11350 3950 11350 3750
+Wire Wire Line
+	4450 3950 13450 3950
+Wire Wire Line
+	10950 3750 10950 3950
+Connection ~ 10950 3950
+Wire Wire Line
+	10550 3750 10550 3950
+Connection ~ 10550 3950
+Wire Wire Line
+	9550 3750 9550 3950
+Connection ~ 9550 3950
+Wire Wire Line
+	8850 3750 8850 3950
+Connection ~ 8850 3950
+Wire Wire Line
+	6100 3450 6850 3450
+Wire Wire Line
+	6700 2950 6700 3950
+Connection ~ 6700 3450
+$Comp
+L CP C11
+U 1 1 59BFE04D
+P 10150 3600
+F 0 "C11" H 10175 3700 50  0000 L CNN
+F 1 "2.2µF 35V" H 9900 3500 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P1.50mm" H 10188 3450 50  0001 C CNN
+F 3 "" H 10150 3600 50  0001 C CNN
+	1    10150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3250 10150 3250
+Wire Wire Line
+	10150 3250 10150 3450
+Wire Wire Line
+	10150 3750 10150 3950
+Connection ~ 10150 3950
+Wire Wire Line
+	6850 2950 6700 2950
+Wire Wire Line
+	6100 3350 6850 3350
+Wire Wire Line
+	5200 3450 5100 3450
+Wire Wire Line
+	5100 3450 5100 3950
+Connection ~ 6700 3950
+$Comp
+L C C5
+U 1 1 59BFE23C
+P 6500 2500
+F 0 "C5" H 6525 2600 50  0000 L CNN
+F 1 "220nF" H 6525 2400 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6538 2350 50  0001 C CNN
+F 3 "" H 6500 2500 50  0001 C CNN
+	1    6500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3250 6500 3250
+Wire Wire Line
+	6500 3250 6500 2650
+Wire Wire Line
+	6200 3350 6200 2150
+Connection ~ 6200 3350
+Wire Wire Line
+	6500 2350 6500 2150
+Connection ~ 6500 2150
+$Comp
+L C C1
+U 1 1 59BFEB9F
+P 4800 3600
+F 0 "C1" H 4825 3700 50  0000 L CNN
+F 1 "2.2nF" H 4825 3500 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 4838 3450 50  0001 C CNN
+F 3 "" H 4800 3600 50  0001 C CNN
+	1    4800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59BFEBE0
+P 4450 3600
+F 0 "R1" V 4530 3600 50  0000 C CNN
+F 1 "16k" V 4450 3600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 4380 3600 50  0001 C CNN
+F 3 "" H 4450 3600 50  0001 C CNN
+	1    4450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3750 4450 3950
+Connection ~ 5100 3950
+Wire Wire Line
+	4800 3750 4800 3950
+Connection ~ 4800 3950
+Wire Wire Line
+	4800 3450 4800 2850
+Wire Wire Line
+	4800 2850 6850 2850
+Wire Wire Line
+	6850 2750 4450 2750
+Wire Wire Line
+	4450 2750 4450 3450
+$Comp
+L L L1
+U 1 1 59BFEDCA
+P 7650 2150
+F 0 "L1" V 7600 2150 50  0000 C CNN
+F 1 "FIT80-5" V 7725 2150 50  0000 C CNN
+F 2 "Inductors_THT:L_Toroid_Vertical_L28.6mm_W14.3mm_P11.43mm_Bourns_5700" H 7650 2150 50  0001 C CNN
+F 3 "" H 7650 2150 50  0001 C CNN
+	1    7650 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 2150 7500 2150
+Wire Wire Line
+	7800 2150 13950 2150
+Wire Wire Line
+	8850 2150 8850 2350
+$Comp
+L CP C21
+U 1 1 59BFF8FC
+P 12100 2850
+F 0 "C21" H 12125 2950 50  0000 L CNN
+F 1 "220µF 35V" H 11850 2750 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 12138 2700 50  0001 C CNN
+F 3 "" H 12100 2850 50  0001 C CNN
+	1    12100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C23
+U 1 1 59BFF943
+P 12550 2850
+F 0 "C23" H 12575 2950 50  0000 L CNN
+F 1 "220µF 35V" H 12300 2750 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 12588 2700 50  0001 C CNN
+F 3 "" H 12550 2850 50  0001 C CNN
+	1    12550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C26
+U 1 1 59BFF98E
+P 13000 2850
+F 0 "C26" H 13025 2950 50  0000 L CNN
+F 1 "220µF 35V" H 12750 2750 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 13038 2700 50  0001 C CNN
+F 3 "" H 13000 2850 50  0001 C CNN
+	1    13000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C28
+U 1 1 59BFF9ED
+P 13450 2850
+F 0 "C28" H 13475 2950 50  0000 L CNN
+F 1 "1µF Film" H 13300 2750 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 13488 2700 50  0001 C CNN
+F 3 "" H 13450 2850 50  0001 C CNN
+	1    13450 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 3950 13450 3000
+Connection ~ 11350 3950
+Wire Wire Line
+	13000 3000 13000 3950
+Connection ~ 13000 3950
+Wire Wire Line
+	12550 3000 12550 3950
+Connection ~ 12550 3950
+Wire Wire Line
+	12100 3000 12100 3950
+Connection ~ 12100 3950
+Wire Wire Line
+	13450 2150 13450 2700
+Connection ~ 8850 2150
+Wire Wire Line
+	13000 2150 13000 2700
+Connection ~ 13000 2150
+Wire Wire Line
+	12550 2700 12550 2150
+Connection ~ 12550 2150
+Wire Wire Line
+	12100 2700 12100 2150
+Connection ~ 12100 2150
+Text GLabel 8600 1700 1    60   Input ~ 0
++25V
+Wire Wire Line
+	8600 1700 8600 2750
+Wire Wire Line
+	8600 2750 8450 2750
+Text GLabel 13950 2150 2    60   Output ~ 0
++14V
+Connection ~ 13450 2150
+$Comp
+L GNDD #PWR01
+U 1 1 59C00028
+P 7050 9200
+F 0 "#PWR01" H 7050 8950 50  0001 C CNN
+F 1 "GNDD" H 7050 9075 50  0000 C CNN
+F 2 "" H 7050 9200 50  0001 C CNN
+F 3 "" H 7050 9200 50  0001 C CNN
+	1    7050 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR02
+U 1 1 59C00074
+P 6700 3950
+F 0 "#PWR02" H 6700 3700 50  0001 C CNN
+F 1 "GNDD" H 6700 3825 50  0000 C CNN
+F 2 "" H 6700 3950 50  0001 C CNN
+F 3 "" H 6700 3950 50  0001 C CNN
+	1    6700 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 9200
+Wire Wire Line
+	8450 5650 8600 5650
+Wire Wire Line
+	8600 5650 8600 4600
+Text GLabel 8600 4600 1    60   Input ~ 0
++25V
+$Comp
+L R R2
+U 1 1 59C01E90
+P 4450 6500
+F 0 "R2" V 4530 6500 50  0000 C CNN
+F 1 "16k" V 4450 6500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 4380 6500 50  0001 C CNN
+F 3 "" H 4450 6500 50  0001 C CNN
+	1    4450 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 59C01EF5
+P 4800 6500
+F 0 "C2" H 4825 6600 50  0000 L CNN
+F 1 "2.2nF" H 4825 6400 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 4838 6350 50  0001 C CNN
+F 3 "" H 4800 6500 50  0001 C CNN
+	1    4800 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5650 4450 5650
+Wire Wire Line
+	4450 5650 4450 6350
+Wire Wire Line
+	4800 6350 4800 5750
+Wire Wire Line
+	4800 5750 6850 5750
+Wire Wire Line
+	6100 6350 6850 6350
+Wire Wire Line
+	6100 6250 6850 6250
+Wire Wire Line
+	4450 6650 4450 6850
+Wire Wire Line
+	4450 6850 13450 6850
+Wire Wire Line
+	4800 6650 4800 6850
+Connection ~ 4800 6850
+Wire Wire Line
+	5200 6350 5100 6350
+Wire Wire Line
+	5100 6350 5100 6850
+Connection ~ 5100 6850
+Wire Wire Line
+	6700 5850 6850 5850
+Wire Wire Line
+	6700 5850 6700 6850
+Connection ~ 6700 6350
+Connection ~ 6700 6850
+$Comp
+L C C4
+U 1 1 59C02548
+P 6450 5400
+F 0 "C4" H 6475 5500 50  0000 L CNN
+F 1 "220nF" H 6475 5300 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6488 5250 50  0001 C CNN
+F 3 "" H 6450 5400 50  0001 C CNN
+	1    6450 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5550 6450 6150
+Wire Wire Line
+	6450 6150 6850 6150
+Wire Wire Line
+	6450 5250 6450 5050
+Wire Wire Line
+	6200 5050 7500 5050
+Wire Wire Line
+	6200 5050 6200 6250
+Connection ~ 6200 6250
+$Comp
+L L L2
+U 1 1 59C02706
+P 7650 5050
+F 0 "L2" V 7600 5050 50  0000 C CNN
+F 1 "FIT80-5" V 7725 5050 50  0000 C CNN
+F 2 "Inductors_THT:L_Toroid_Vertical_L28.6mm_W14.3mm_P11.43mm_Bourns_5700" H 7650 5050 50  0001 C CNN
+F 3 "" H 7650 5050 50  0001 C CNN
+	1    7650 5050
+	0    1    1    0   
+$EndComp
+Connection ~ 6450 5050
+Wire Wire Line
+	8450 5850 9050 5850
+Wire Wire Line
+	7800 5050 13950 5050
+Connection ~ 8850 5050
+Text GLabel 13950 5050 2    60   Output ~ 0
++5V
+$Comp
+L CP C10
+U 1 1 59C03A5F
+P 8850 6500
+F 0 "C10" H 8875 6600 50  0000 L CNN
+F 1 "2.2µF 35V" H 8600 6400 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P1.50mm" H 8888 6350 50  0001 C CNN
+F 3 "" H 8850 6500 50  0001 C CNN
+	1    8850 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 6250 9050 6250
+Wire Wire Line
+	8850 6250 8850 6350
+Wire Wire Line
+	8850 6650 8850 6850
+Connection ~ 8850 6850
+$Comp
+L R R4
+U 1 1 59C049BE
+P 8850 5400
+F 0 "R4" V 8930 5400 50  0000 C CNN
+F 1 "24k" V 8850 5400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 8780 5400 50  0001 C CNN
+F 3 "" H 8850 5400 50  0001 C CNN
+	1    8850 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 59C04A19
+P 9200 5850
+F 0 "R7" V 9280 5850 50  0000 C CNN
+F 1 "4k7" V 9200 5850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 9130 5850 50  0001 C CNN
+F 3 "" H 9200 5850 50  0001 C CNN
+	1    9200 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 59C04A76
+P 9200 6250
+F 0 "R8" V 9280 6250 50  0000 C CNN
+F 1 "7k5" V 9200 6250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 9130 6250 50  0001 C CNN
+F 3 "" H 9200 6250 50  0001 C CNN
+	1    9200 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 59C04AD5
+P 10950 6500
+F 0 "R10" V 11030 6500 50  0000 C CNN
+F 1 "10k" V 10950 6500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 10880 6500 50  0001 C CNN
+F 3 "" H 10950 6500 50  0001 C CNN
+	1    10950 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C12
+U 1 1 59C04B34
+P 10150 6500
+F 0 "C12" H 10175 6600 50  0000 L CNN
+F 1 "2.2µF 35V" H 9900 6400 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P1.50mm" H 10188 6350 50  0001 C CNN
+F 3 "" H 10150 6500 50  0001 C CNN
+	1    10150 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C22
+U 1 1 59C04B95
+P 12100 5750
+F 0 "C22" H 12125 5850 50  0000 L CNN
+F 1 "220µF 35V" H 11850 5650 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 12138 5600 50  0001 C CNN
+F 3 "" H 12100 5750 50  0001 C CNN
+	1    12100 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C27
+U 1 1 59C04C54
+P 13000 5750
+F 0 "C27" H 13025 5850 50  0000 L CNN
+F 1 "220µF 35V" H 12750 5650 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 13038 5600 50  0001 C CNN
+F 3 "" H 13000 5750 50  0001 C CNN
+	1    13000 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C15
+U 1 1 59C04CCB
+P 10550 6500
+F 0 "C15" H 10575 6600 50  0000 L CNN
+F 1 "2.2µF 35V" H 10300 6400 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P1.50mm" H 10588 6350 50  0001 C CNN
+F 3 "" H 10550 6500 50  0001 C CNN
+	1    10550 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C24
+U 1 1 59C04DEE
+P 12550 5750
+F 0 "C24" H 12575 5850 50  0000 L CNN
+F 1 "220µF 35V" H 12300 5650 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 12588 5600 50  0001 C CNN
+F 3 "" H 12550 5750 50  0001 C CNN
+	1    12550 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C20
+U 1 1 59C04E57
+P 11350 6500
+F 0 "C20" H 11375 6600 50  0000 L CNN
+F 1 "390pF" H 11375 6400 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 11388 6350 50  0001 C CNN
+F 3 "" H 11350 6500 50  0001 C CNN
+	1    11350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C17
+U 1 1 59C04EC2
+P 10950 6050
+F 0 "C17" H 10975 6150 50  0000 L CNN
+F 1 "22nF" H 10975 5950 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 10988 5900 50  0001 C CNN
+F 3 "" H 10950 6050 50  0001 C CNN
+	1    10950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV2
+U 1 1 59C04F2F
+P 9550 6500
+F 0 "RV2" V 9375 6500 50  0000 C CNN
+F 1 "10k" V 9450 6500 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Vishay_T73XX_Vertical" H 9550 6500 50  0001 C CNN
+F 3 "" H 9550 6500 50  0001 C CNN
+	1    9550 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5050 8850 5250
+Wire Wire Line
+	8850 5850 8850 5550
+Connection ~ 8850 5850
+Wire Wire Line
+	9350 5850 9800 5850
+Wire Wire Line
+	9800 5850 9800 6500
+Wire Wire Line
+	9800 6500 9700 6500
+Connection ~ 8850 6250
+Wire Wire Line
+	9350 6250 9550 6250
+Wire Wire Line
+	9550 6250 9550 6350
+Wire Wire Line
+	9550 6650 9550 6850
+Connection ~ 9550 6850
+Wire Wire Line
+	10150 6650 10150 6850
+Connection ~ 10150 6850
+Wire Wire Line
+	10550 6650 10550 6850
+Connection ~ 10550 6850
+Wire Wire Line
+	10950 6650 10950 6850
+Connection ~ 10950 6850
+Wire Wire Line
+	11350 6650 11350 6850
+Connection ~ 11350 6850
+Wire Wire Line
+	12100 5900 12100 6850
+Connection ~ 12100 6850
+Wire Wire Line
+	12550 5900 12550 6850
+Connection ~ 12550 6850
+Wire Wire Line
+	13000 5900 13000 6850
+Connection ~ 13000 6850
+Wire Wire Line
+	13450 6850 13450 5900
+$Comp
+L C C29
+U 1 1 59C05AFF
+P 13450 5750
+F 0 "C29" H 13475 5850 50  0000 L CNN
+F 1 "1µF Film" H 13300 5650 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 13488 5600 50  0001 C CNN
+F 3 "" H 13450 5750 50  0001 C CNN
+	1    13450 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 5600 13450 5050
+Connection ~ 13450 5050
+Wire Wire Line
+	13000 5600 13000 5050
+Connection ~ 13000 5050
+Wire Wire Line
+	12550 5600 12550 5050
+Connection ~ 12550 5050
+Wire Wire Line
+	12100 5600 12100 5050
+Connection ~ 12100 5050
+Wire Wire Line
+	11350 5750 11350 6350
+Wire Wire Line
+	8450 5750 11350 5750
+Wire Wire Line
+	10950 5900 10950 5750
+Connection ~ 10950 5750
+Wire Wire Line
+	10950 6200 10950 6350
+Wire Wire Line
+	10550 6350 10550 5950
+Wire Wire Line
+	10550 5950 8450 5950
+Wire Wire Line
+	10150 6350 10150 6150
+Wire Wire Line
+	10150 6150 8450 6150
+$Comp
+L GNDD #PWR03
+U 1 1 59C064EC
+P 6700 6850
+F 0 "#PWR03" H 6700 6600 50  0001 C CNN
+F 1 "GNDD" H 6700 6725 50  0000 C CNN
+F 2 "" H 6700 6850 50  0001 C CNN
+F 3 "" H 6700 6850 50  0001 C CNN
+	1    6700 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM1117-3.3 U2
+U 1 1 59C06CF9
+P 13150 8200
+F 0 "U2" H 13000 8325 50  0000 C CNN
+F 1 "LM1117-3.3" H 13150 8325 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 13150 8200 50  0001 C CNN
+F 3 "" H 13150 8200 50  0001 C CNN
+	1    13150 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 8200 13900 8200
+Wire Wire Line
+	12300 8200 12850 8200
+Wire Wire Line
+	13150 8500 13150 8900
+Wire Wire Line
+	12700 8900 13600 8900
+Connection ~ 13150 8900
+$Comp
+L CP C30
+U 1 1 59C07B97
+P 13600 8600
+F 0 "C30" H 13625 8700 50  0000 L CNN
+F 1 "10µF Tantalum" H 13400 8500 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_Tantal_D5.5mm_P2.50mm" H 13638 8450 50  0001 C CNN
+F 3 "" H 13600 8600 50  0001 C CNN
+	1    13600 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C25
+U 1 1 59C07C16
+P 12700 8600
+F 0 "C25" H 12725 8700 50  0000 L CNN
+F 1 "10µF Tantalum" H 12500 8500 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_Tantal_D5.5mm_P2.50mm" H 12738 8450 50  0001 C CNN
+F 3 "" H 12700 8600 50  0001 C CNN
+	1    12700 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D3
+U 1 1 59C07C8D
+P 13150 7800
+F 0 "D3" H 13150 7900 50  0000 C CNN
+F 1 "1N4004" H 13150 7700 50  0000 C CNN
+F 2 "Diodes_THT:D_A-405_P7.62mm_Horizontal" H 13150 7800 50  0001 C CNN
+F 3 "" H 13150 7800 50  0001 C CNN
+	1    13150 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 7800 13600 7800
+Wire Wire Line
+	13600 7800 13600 8450
+Connection ~ 13600 8200
+Wire Wire Line
+	13600 8900 13600 8750
+Wire Wire Line
+	12700 8900 12700 8750
+Wire Wire Line
+	12700 7800 12700 8450
+Connection ~ 12700 8200
+Wire Wire Line
+	13000 7800 12700 7800
+$Comp
+L GNDD #PWR04
+U 1 1 59C082A2
+P 13150 8900
+F 0 "#PWR04" H 13150 8650 50  0001 C CNN
+F 1 "GNDD" H 13150 8775 50  0000 C CNN
+F 2 "" H 13150 8900 50  0001 C CNN
+F 3 "" H 13150 8900 50  0001 C CNN
+	1    13150 8900
+	1    0    0    -1  
+$EndComp
+Text GLabel 13900 8200 2    60   Output ~ 0
++3V3
+Text GLabel 4500 8050 0    60   Input ~ 0
+18Vac1
+Text GLabel 4500 8950 0    60   Input ~ 0
+18Vac2
+Text GLabel 8450 9200 2    60   Output ~ 0
+GND
+Text GLabel 8450 7800 2    60   Output ~ 0
++25V
+Connection ~ 11700 5050
+Text GLabel 12300 8200 0    60   Input ~ 0
++5V
+$Comp
+L LM7812_TO220 U1
+U 1 1 59C287DF
+P 10550 8200
+F 0 "U1" H 10400 8325 50  0000 C CNN
+F 1 "LM7812_TO220" H 10550 8325 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 10550 8425 50  0001 C CIN
+F 3 "" H 10550 8150 50  0001 C CNN
+	1    10550 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 8500 10550 8900
+Wire Wire Line
+	10850 8200 11200 8200
+Wire Wire Line
+	10250 8200 9900 8200
+$Comp
+L CP C18
+U 1 1 59C28C85
+P 11000 8600
+F 0 "C18" H 11025 8700 50  0000 L CNN
+F 1 "10µF Tantalum" H 10800 8500 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_Tantal_D5.5mm_P2.50mm" H 11038 8450 50  0001 C CNN
+F 3 "" H 11000 8600 50  0001 C CNN
+	1    11000 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C13
+U 1 1 59C28D00
+P 10150 8600
+F 0 "C13" H 10175 8700 50  0000 L CNN
+F 1 "10µF Tantalum" H 9950 8500 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_Tantal_D5.5mm_P2.50mm" H 10188 8450 50  0001 C CNN
+F 3 "" H 10150 8600 50  0001 C CNN
+	1    10150 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 7800 10150 8450
+Connection ~ 10150 8200
+Wire Wire Line
+	11000 7800 11000 8450
+Connection ~ 11000 8200
+Wire Wire Line
+	11000 8900 11000 8750
+Wire Wire Line
+	10150 8900 11000 8900
+Wire Wire Line
+	10150 8900 10150 8750
+Connection ~ 10550 8900
+$Comp
+L D D2
+U 1 1 59C29174
+P 10550 7800
+F 0 "D2" H 10550 7900 50  0000 C CNN
+F 1 "1N4004" H 10550 7700 50  0000 C CNN
+F 2 "Diodes_THT:D_A-405_P7.62mm_Horizontal" H 10550 7800 50  0001 C CNN
+F 3 "" H 10550 7800 50  0001 C CNN
+	1    10550 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 7800 11000 7800
+Wire Wire Line
+	10400 7800 10150 7800
+$Comp
+L GNDD #PWR05
+U 1 1 59C29472
+P 10550 8900
+F 0 "#PWR05" H 10550 8650 50  0001 C CNN
+F 1 "GNDD" H 10550 8775 50  0000 C CNN
+F 2 "" H 10550 8900 50  0001 C CNN
+F 3 "" H 10550 8900 50  0001 C CNN
+	1    10550 8900
+	1    0    0    -1  
+$EndComp
+Text GLabel 9900 8200 0    60   Input ~ 0
++25V
+Text GLabel 11200 8200 2    60   Output ~ 0
++12V
+$Comp
+L D_Bridge_-A+A D1
+U 1 1 59C4E009
+P 5300 8500
+F 0 "D1" H 5350 8775 50  0000 L CNN
+F 1 "VS-KBPC808PBF" H 5050 8000 50  0000 L CNN
+F 2 "Diodes_THT:Diode_Bridge_15.7x15.7" H 5300 8500 50  0001 C CNN
+F 3 "" H 5300 8500 50  0001 C CNN
+	1    5300 8500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

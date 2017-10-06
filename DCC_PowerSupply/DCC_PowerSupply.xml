@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/Paul/BBB_DCC-Workspace/Hardware/DCC_PowerSupply/DCC_PowerSupply.sch</source>
+    <date>30/09/2017 19:07:35</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>DCC Power Supply</title>
+        <company>(c) 2017 - Paul Van den Bergh</company>
+        <rev>0.9</rev>
+        <date>2017-09-23</date>
+        <source>DCC_PowerSupply.sch</source>
+        <comment number="1" value="85W Power supply"/>
+        <comment number="2" value="+14V - 6A Output"/>
+        <comment number="3" value="+5V - 6A Output"/>
+        <comment number="4" value="18Vac - 6.6A Input"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="F1">
+      <value>6.3A</value>
+      <footprint>Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm</footprint>
+      <libsource lib="device" part="Fuse"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C657BE</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>4700µF 35V</value>
+      <footprint>Capacitors_THT:CP_Radial_D18.0mm_P7.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C65977</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>4700µF 35V</value>
+      <footprint>Capacitors_THT:CP_Radial_D18.0mm_P7.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C65996</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>4700µF 35V</value>
+      <footprint>Capacitors_THT:CP_Radial_D18.0mm_P7.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C659DD</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>1µF Film</value>
+      <footprint>Capacitors_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C65A2E</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>2k7</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C65B27</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LEDs:LED_D3.0mm</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C65B52</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>L4970A</value>
+      <footprint>TO_SOT_Packages_THT:Multiwatt-15_Vertical_StaggeredType1</footprint>
+      <datasheet>http://www.st.com/web/en/resource/technical/document/datasheet/CD00000080.pdf</datasheet>
+      <fields>
+        <field name="Description">L4970A, Switching Regulator, Buck Controller, 10A, Adjustable, 5.1  40 V, 500 kHz, 15-Pin MULTIWATT V</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">2513390</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">L4970A</field>
+        <field name="Allied_Number">70013876</field>
+        <field name="Height">5</field>
+      </fields>
+      <libsource lib="L4970A" part="L4970A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C65DD2</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>STPS1545CT</value>
+      <footprint>TO_SOT_Packages_THT:TO-220_Vertical</footprint>
+      <datasheet>http://www.st.com/web/en/resource/technical/document/datasheet/CD00004902.pdf</datasheet>
+      <fields>
+        <field name="Description">STPS1545CT, Dual Schottky Diode,  7.5A max, 45V Common Cathode, Dual, 3-Pin, TO-220AB</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">4860244</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">STPS1545CT</field>
+        <field name="Allied_Number">70391425</field>
+        <field name="Height">4.6</field>
+      </fields>
+      <libsource lib="STPS1545CT" part="STPS1545CT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C65F9D</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>2.2µF 16V</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C661BC</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>7k5</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C662C0</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>10k</value>
+      <footprint>Potentiometers:Potentiometer_Trimmer_Bourns_3339P_Horizontal</footprint>
+      <libsource lib="device" part="POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C662F5</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>4k7</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C66326</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>24k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C66359</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>2.2nF</value>
+      <footprint>Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C66396</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>16kR</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C663CD</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>220nF</value>
+      <footprint>Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C666E2</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>FIT80-5</value>
+      <footprint>Inductors_THT:L_Toroid_Vertical_L28.6mm_W14.3mm_P11.43mm_Bourns_5700</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C66786</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>2.2µF 6v3</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6687A</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>2.2µF 6v3</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C668C5</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>220µF 24V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C66A8E</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>220µF 24V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C66ACF</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>220µF 24V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C66B14</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>1µF Film</value>
+      <footprint>Capacitors_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C66B59</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED blue</value>
+      <footprint>LEDs:LED_D3.0mm</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6710E</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>1k5</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C671A5</tstamp>
+    </comp>
+    <comp ref="IC4">
+      <value>L4970A</value>
+      <footprint>TO_SOT_Packages_THT:Multiwatt-15_Vertical_StaggeredType1</footprint>
+      <datasheet>http://www.st.com/web/en/resource/technical/document/datasheet/CD00000080.pdf</datasheet>
+      <fields>
+        <field name="Description">L4970A, Switching Regulator, Buck Controller, 10A, Adjustable, 5.1  40 V, 500 kHz, 15-Pin MULTIWATT V</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">2513390</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">L4970A</field>
+        <field name="Allied_Number">70013876</field>
+        <field name="Height">5</field>
+      </fields>
+      <libsource lib="L4970A" part="L4970A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68382</tstamp>
+    </comp>
+    <comp ref="IC3">
+      <value>STPS1545CT</value>
+      <footprint>TO_SOT_Packages_THT:TO-220_Vertical</footprint>
+      <datasheet>http://www.st.com/web/en/resource/technical/document/datasheet/CD00004902.pdf</datasheet>
+      <fields>
+        <field name="Description">STPS1545CT, Dual Schottky Diode,  7.5A max, 45V Common Cathode, Dual, 3-Pin, TO-220AB</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">4860244</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">STPS1545CT</field>
+        <field name="Allied_Number">70391425</field>
+        <field name="Height">4.6</field>
+      </fields>
+      <libsource lib="STPS1545CT" part="STPS1545CT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68394</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>2.2µF 16V</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6839F</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>7k5</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683A8</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>10k</value>
+      <footprint>Potentiometers:Potentiometer_Trimmer_Bourns_3339P_Horizontal</footprint>
+      <libsource lib="device" part="POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683AE</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>4k7</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683B4</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>24k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683BA</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>2.2nF</value>
+      <footprint>Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683C0</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>16kR</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683C6</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>220nF</value>
+      <footprint>Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683DE</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>FIT80-5</value>
+      <footprint>Inductors_THT:L_Toroid_Vertical_L28.6mm_W14.3mm_P11.43mm_Bourns_5700</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683E6</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>2.2µF 6v3</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683F1</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>2.2µF 6v3</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C683F7</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>220µF 24V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68405</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>220µF 24V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6840B</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>220µF 24V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68411</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>1µF Film</value>
+      <footprint>Capacitors_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68417</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED blue</value>
+      <footprint>LEDs:LED_D3.0mm</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6842E</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>330</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68434</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Screw_Terminal_01x05</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Philmore_TB13x_05x5mm_Straight</footprint>
+      <libsource lib="conn" part="Screw_Terminal_01x05"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6889A</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LM7812_TO220</value>
+      <footprint>TO_SOT_Packages_THT:TO-220_Horizontal</footprint>
+      <libsource lib="regul" part="LM7812_TO220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68C75</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>1N4004</value>
+      <footprint>Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal</footprint>
+      <libsource lib="diode" part="1N4004"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68DA9</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>10µF 16V</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68E24</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>10µF 16V</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C68E9D</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED</value>
+      <footprint>LEDs:LED_D3.0mm</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6AB31</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>1k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6ABBA</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>D_Bridge_-A+A</value>
+      <footprint>Diodes_THT:Diode_Bridge_15.7x15.7</footprint>
+      <libsource lib="device" part="D_Bridge_-A+A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6E836</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Screw_Terminal_01x04</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Philmore_TB13x_04x5mm_Straight</footprint>
+      <libsource lib="conn" part="Screw_Terminal_01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6BF0A</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>220µF 25V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C9409A</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>220µF 25V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C941D5</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>220µF 25V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C94258</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>220µF 25V</value>
+      <footprint>Capacitors_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C942DD</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>1N4004</value>
+      <footprint>Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal</footprint>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C94370</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="diode" part="1N4001">
+      <aliases>
+        <alias>1N4002</alias>
+        <alias>1N4003</alias>
+        <alias>1N4004</alias>
+        <alias>1N4005</alias>
+        <alias>1N4006</alias>
+        <alias>1N4007</alias>
+        <alias>BA157</alias>
+        <alias>BA158</alias>
+        <alias>BA159</alias>
+      </aliases>
+      <description>50V 1A General Purpose Rectifier Diode, DO-41</description>
+      <docs>http://www.vishay.com/docs/88503/1n4001.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+        <fp>D*DO?204AL*</fp>
+        <fp>D*SOD81*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4001</field>
+        <field name="Footprint">Diodes_THT:D_DO-41_SOD81_Horizontal_RM10</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D">
+      <description>Diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Bridge_-A+A">
+      <description>Diode bridge (pins: 1=-, 2=AC, 3=+, 4=AC)</description>
+      <footprints>
+        <fp>D?Bridge*</fp>
+        <fp>D?Rectifier*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Bridge_-A+A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Fuse">
+      <description>Fuse, generic</description>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="L4970A" part="L4970A">
+      <description>L4970A, Switching Regulator, Buck Controller, 10A, Adjustable, 5.1  40 V, 500 kHz, 15-Pin MULTIWATT V</description>
+      <docs>http://www.st.com/web/en/resource/technical/document/datasheet/CD00000080.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">L4970A</field>
+        <field name="Footprint">TO127P500X2020X2210-15P</field>
+        <field name="Datasheet">http://www.st.com/web/en/resource/technical/document/datasheet/CD00000080.pdf</field>
+        <field name="Description">L4970A, Switching Regulator, Buck Controller, 10A, Adjustable, 5.1  40 V, 500 kHz, 15-Pin MULTIWATT V</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">2513390</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">L4970A</field>
+        <field name="Allied_Number">70013876</field>
+        <field name="Height">5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="R_OSC" type="unspc"/>
+        <pin num="2" name="C_OSC" type="unspc"/>
+        <pin num="3" name="RST_IN" type="input"/>
+        <pin num="4" name="RST_OUT" type="output"/>
+        <pin num="5" name="RST_DLY" type="input"/>
+        <pin num="6" name="BOOTSTRAP" type="unspc"/>
+        <pin num="7" name="OUTPUT" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="VI" type="power_in"/>
+        <pin num="10" name="FREQ.COMP" type="unspc"/>
+        <pin num="11" name="FEEDBACK" type="input"/>
+        <pin num="12" name="SOFT_START" type="unspc"/>
+        <pin num="13" name="SYNC" type="input"/>
+        <pin num="14" name="VREF" type="output"/>
+        <pin num="15" name="VSTART" type="output"/>
+        <pin num="16" name="GND_(TAB)" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <description>LED generic</description>
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="regul" part="LM7805_TO220">
+      <aliases>
+        <alias>LM7806_TO220</alias>
+        <alias>LM7808_TO220</alias>
+        <alias>LM7809_TO220</alias>
+        <alias>LM7810_TO220</alias>
+        <alias>LM7812_TO220</alias>
+        <alias>LM7815_TO220</alias>
+        <alias>LM7818_TO220</alias>
+        <alias>LM7824_TO220</alias>
+        <alias>LM78M05_TO220</alias>
+        <alias>SPX2920U-3.3_TO220</alias>
+        <alias>SPX2920U-5.0_TO220</alias>
+        <alias>LF15_TO220</alias>
+        <alias>LF18_TO220</alias>
+        <alias>LF25_TO220</alias>
+        <alias>LF33_TO220</alias>
+        <alias>LF50_TO220</alias>
+        <alias>LF60_TO220</alias>
+        <alias>LF80_TO220</alias>
+        <alias>LF85_TO220</alias>
+        <alias>LF120_TO220</alias>
+        <alias>LF47_TO220</alias>
+        <alias>LF90_TO220</alias>
+        <alias>LM341T-05_TO220</alias>
+        <alias>LM341T-12_TO220</alias>
+        <alias>LM341T-15_TO220</alias>
+      </aliases>
+      <description>Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220</description>
+      <docs>http://www.fairchildsemi.com/ds/LM/LM7805.pdf</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM7805_TO220</field>
+        <field name="Footprint">TO_SOT_Packages_THT:TO-220_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VI" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="POT">
+      <description>Potentiometer</description>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="STPS1545CT" part="STPS1545CT">
+      <description>STPS1545CT, Dual Schottky Diode,  7.5A max, 45V Common Cathode, Dual, 3-Pin, TO-220AB</description>
+      <docs>http://www.st.com/web/en/resource/technical/document/datasheet/CD00004902.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">STPS1545CT</field>
+        <field name="Footprint">TO270P460X1020X2008-3P</field>
+        <field name="Datasheet">http://www.st.com/web/en/resource/technical/document/datasheet/CD00004902.pdf</field>
+        <field name="Description">STPS1545CT, Dual Schottky Diode,  7.5A max, 45V Common Cathode, Dual, 3-Pin, TO-220AB</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">4860244</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">STPS1545CT</field>
+        <field name="Allied_Number">70391425</field>
+        <field name="Height">4.6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="unspc"/>
+        <pin num="2" name="K" type="unspc"/>
+        <pin num="3" name="A2" type="unspc"/>
+        <pin num="4" name="TAB" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Screw_Terminal_01x04">
+      <description>Generic screw terminal, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*Terminal*Block*:*</fp>
+        <fp>TerminalBlock*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Screw_Terminal_01x05">
+      <description>Generic screw terminal, single row, 01x05</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*Terminal*Block*:*</fp>
+        <fp>TerminalBlock*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="L4970A">
+      <uri>D:\Users\Paul\Downloads\KiCad\SamacSys_Libs\LIB_L4970A\L4970A\KiCad\L4970A.lib</uri>
+    </library>
+    <library logical="regul">
+      <uri>C:\Program Files\KiCad\share\kicad\library\regul.lib</uri>
+    </library>
+    <library logical="diode">
+      <uri>C:\Program Files\KiCad\share\kicad\library\diode.lib</uri>
+    </library>
+    <library logical="STPS1545CT">
+      <uri>D:\Users\Paul\Downloads\KiCad\SamacSys_Libs\LIB_STPS1545CT\STPS1545CT\KiCad\STPS1545CT.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="C21" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="L2" pin="1"/>
+      <node ref="C22" pin="1"/>
+    </net>
+    <net code="2" name="Net-(C18-Pad1)">
+      <node ref="IC4" pin="12"/>
+      <node ref="C18" pin="1"/>
+    </net>
+    <net code="3" name="Net-(C17-Pad1)">
+      <node ref="IC4" pin="14"/>
+      <node ref="C17" pin="1"/>
+    </net>
+    <net code="4" name="+15V">
+      <node ref="R3" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="J2" pin="4"/>
+      <node ref="L1" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="5" name="+24V">
+      <node ref="C3" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="D1" pin="3"/>
+      <node ref="J2" pin="5"/>
+      <node ref="IC2" pin="9"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="6" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="7" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="RV2" pin="1"/>
+    </net>
+    <net code="8" name="Net-(IC4-Pad1)">
+      <node ref="R7" pin="1"/>
+      <node ref="IC4" pin="1"/>
+    </net>
+    <net code="9" name="Net-(R9-Pad1)">
+      <node ref="R9" pin="1"/>
+      <node ref="RV2" pin="2"/>
+    </net>
+    <net code="10" name="Net-(C16-Pad1)">
+      <node ref="C16" pin="1"/>
+      <node ref="R10" pin="2"/>
+      <node ref="IC4" pin="15"/>
+    </net>
+    <net code="11" name="Net-(C15-Pad1)">
+      <node ref="IC4" pin="7"/>
+      <node ref="IC3" pin="2"/>
+      <node ref="C15" pin="1"/>
+      <node ref="L2" pin="2"/>
+    </net>
+    <net code="12" name="Net-(C15-Pad2)">
+      <node ref="C15" pin="2"/>
+      <node ref="IC4" pin="6"/>
+    </net>
+    <net code="13" name="Net-(C14-Pad1)">
+      <node ref="IC4" pin="2"/>
+      <node ref="C14" pin="1"/>
+    </net>
+    <net code="14" name="Net-(IC4-Pad11)">
+      <node ref="R9" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="IC4" pin="11"/>
+    </net>
+    <net code="15" name="Net-(D1-Pad2)">
+      <node ref="J1" pin="4"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="16" name="+22V">
+      <node ref="C25" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C23" pin="1"/>
+      <node ref="C26" pin="1"/>
+      <node ref="C27" pin="1"/>
+      <node ref="C28" pin="1"/>
+      <node ref="IC4" pin="9"/>
+    </net>
+    <net code="17" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="18" name="Net-(F1-Pad2)">
+      <node ref="F1" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="19" name="Net-(D1-Pad4)">
+      <node ref="D1" pin="4"/>
+      <node ref="F1" pin="1"/>
+    </net>
+    <net code="20" name="+12V">
+      <node ref="J2" pin="3"/>
+      <node ref="C24" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="D5" pin="2"/>
+    </net>
+    <net code="21" name="Net-(D6-Pad2)">
+      <node ref="D6" pin="2"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="22" name="Net-(IC1-Pad4)">
+      <node ref="IC1" pin="4"/>
+    </net>
+    <net code="23" name="Net-(IC2-Pad16)">
+      <node ref="IC2" pin="16"/>
+    </net>
+    <net code="24" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1"/>
+      <node ref="IC2" pin="14"/>
+    </net>
+    <net code="25" name="Net-(IC2-Pad13)">
+      <node ref="IC2" pin="13"/>
+    </net>
+    <net code="26" name="Net-(IC2-Pad10)">
+      <node ref="IC2" pin="10"/>
+    </net>
+    <net code="27" name="Net-(C6-Pad2)">
+      <node ref="IC2" pin="6"/>
+      <node ref="C6" pin="2"/>
+    </net>
+    <net code="28" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="RV1" pin="2"/>
+    </net>
+    <net code="29" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="IC2" pin="15"/>
+    </net>
+    <net code="30" name="Net-(R5-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="RV1" pin="1"/>
+    </net>
+    <net code="31" name="Net-(IC2-Pad1)">
+      <node ref="IC2" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="32" name="Net-(IC2-Pad5)">
+      <node ref="IC2" pin="5"/>
+    </net>
+    <net code="33" name="Net-(IC2-Pad4)">
+      <node ref="IC2" pin="4"/>
+    </net>
+    <net code="34" name="Net-(C5-Pad1)">
+      <node ref="IC2" pin="2"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="35" name="Net-(D2-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="36" name="Net-(IC4-Pad4)">
+      <node ref="IC4" pin="4"/>
+    </net>
+    <net code="37" name="Net-(IC4-Pad5)">
+      <node ref="IC4" pin="5"/>
+    </net>
+    <net code="38" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="39" name="Net-(IC3-Pad4)">
+      <node ref="IC3" pin="4"/>
+    </net>
+    <net code="40" name="GND">
+      <node ref="R7" pin="2"/>
+      <node ref="IC3" pin="3"/>
+      <node ref="IC3" pin="1"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="RV2" pin="3"/>
+      <node ref="D3" pin="1"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="D4" pin="1"/>
+      <node ref="IC4" pin="8"/>
+      <node ref="C9" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="IC1" pin="3"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="D6" pin="1"/>
+      <node ref="IC2" pin="8"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="IC2" pin="3"/>
+      <node ref="D2" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C26" pin="2"/>
+      <node ref="IC4" pin="3"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C24" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="41" name="Net-(IC4-Pad16)">
+      <node ref="IC4" pin="16"/>
+    </net>
+    <net code="42" name="Net-(IC4-Pad13)">
+      <node ref="IC4" pin="13"/>
+    </net>
+    <net code="43" name="Net-(IC4-Pad10)">
+      <node ref="IC4" pin="10"/>
+    </net>
+    <net code="44" name="Net-(C9-Pad1)">
+      <node ref="IC2" pin="12"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="45" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
+      <node ref="L1" pin="2"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="IC2" pin="7"/>
+    </net>
+    <net code="46" name="Net-(IC2-Pad11)">
+      <node ref="R4" pin="2"/>
+      <node ref="IC2" pin="11"/>
+      <node ref="R3" pin="2"/>
+    </net>
+  </nets>
+</export>

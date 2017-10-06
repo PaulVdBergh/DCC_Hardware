@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP L4970A
+D L4970A, Switching Regulator, Buck Controller, 10A, Adjustable, 5.1  40 V, 500 kHz, 15-Pin MULTIWATT V
+K
+F http://www.st.com/web/en/resource/technical/document/datasheet/CD00000080.pdf
+$ENDCMP
+#
+#End Doc Library

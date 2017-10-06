@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP P82B715PN
+D NXP - P82B715PN - IC, BUS EXTENDER, 82B715, DIP8
+K
+F http://www.ti.com/lit/ds/symlink/p82b715.pdf
+$ENDCMP
+#
+#End Doc Library

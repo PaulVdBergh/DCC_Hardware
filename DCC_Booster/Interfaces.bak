@@ -1,0 +1,750 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L4970A
+LIBS:STPS1545CT
+LIBS:st-microelectronics
+LIBS:tsop
+LIBS:A-2014-1-4-R
+LIBS:P82B715PN
+LIBS:54601-906WPLF
+LIBS:DCC_V2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 6 6
+Title "XpressNet Interface"
+Date "2017-09-19"
+Rev "1"
+Comp "(c) 2017 - Paul Van den Bergh"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MAX485E U9
+U 1 1 59CD539F
+P 8700 4250
+F 0 "U9" H 8460 4700 50  0000 C CNN
+F 1 "MAX485E" H 8730 4700 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 8700 3550 50  0001 C CNN
+F 3 "" H 8700 4300 50  0001 C CNN
+	1    8700 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4850 8700 5750
+Wire Wire Line
+	9600 4400 10500 4400
+Wire Wire Line
+	9600 4400 9600 4150
+Wire Wire Line
+	9600 4150 9100 4150
+Wire Wire Line
+	11200 4200 11300 4200
+Wire Wire Line
+	11300 3950 11300 5050
+Wire Wire Line
+	11300 3950 9450 3950
+Wire Wire Line
+	9450 3950 9450 4450
+Wire Wire Line
+	9450 4450 9100 4450
+Wire Wire Line
+	11500 4300 11200 4300
+Wire Wire Line
+	11300 5050 11200 5050
+Connection ~ 11300 4200
+Wire Wire Line
+	11500 5150 11200 5150
+Connection ~ 11500 4300
+Wire Wire Line
+	10400 4300 10400 5700
+Wire Wire Line
+	10400 5150 10500 5150
+Wire Wire Line
+	10500 5250 10300 5250
+Wire Wire Line
+	10300 5250 10300 4400
+Connection ~ 10300 4400
+Wire Wire Line
+	8700 1350 8700 3750
+$Comp
+L R R29
+U 1 1 59CD53A1
+P 3050 1650
+F 0 "R29" V 3130 1650 50  0000 C CNN
+F 1 "10k" V 3050 1650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2980 1650 50  0001 C CNN
+F 3 "" H 3050 1650 50  0001 C CNN
+	1    3050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C25
+U 1 1 59CD53A2
+P 3050 5300
+F 0 "C25" H 3075 5400 50  0000 L CNN
+F 1 "100nF" H 3075 5200 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W3.0mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 3088 5150 50  0001 C CNN
+F 3 "" H 3050 5300 50  0001 C CNN
+	1    3050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 59CD53A3
+P 2700 2650
+F 0 "Y1" H 2700 2800 50  0000 C CNN
+F 1 "16MHz" H 2700 2500 50  0000 C CNN
+F 2 "Crystals:Crystal_HC18-U_Vertical" H 2700 2650 50  0001 C CNN
+F 3 "" H 2700 2650 50  0001 C CNN
+	1    2700 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C23
+U 1 1 59CD53A4
+P 2250 2850
+F 0 "C23" H 2275 2950 50  0000 L CNN
+F 1 "22pF" H 2275 2750 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 2288 2700 50  0001 C CNN
+F 3 "" H 2250 2850 50  0001 C CNN
+	1    2250 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L C C24
+U 1 1 59CD53A5
+P 2250 2450
+F 0 "C24" H 2275 2550 50  0000 L CNN
+F 1 "22pF" H 2275 2350 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 2288 2300 50  0001 C CNN
+F 3 "" H 2250 2450 50  0001 C CNN
+	1    2250 2450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4350 1350 1    60   Input ~ 0
++3V3
+$Comp
+L SW_DPST SW1
+U 1 1 59CD53A6
+P 2250 5300
+F 0 "SW1" H 2250 5500 50  0000 C CNN
+F 1 "SW_DPST" H 2250 5100 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 2250 5300 50  0001 C CNN
+F 3 "" H 2250 5300 50  0001 C CNN
+	1    2250 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L P82B715PN IC3
+U 1 1 59CD53A7
+P 6950 7050
+F 0 "IC3" H 7500 7200 50  0000 C CNN
+F 1 "P82B715PN" H 7500 6600 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 7500 6500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/p82b715.pdf" H 7500 6400 50  0001 C CNN
+F 4 "NXP - P82B715PN - IC, BUS EXTENDER, 82B715, DIP8" H 7500 6300 50  0001 C CNN "Description"
+F 5 "RS" H 7500 6200 50  0001 C CNN "Supplier_Name"
+F 6 "" H 7500 6100 50  0001 C CNN "RS Part Number"
+F 7 "NXP" H 7500 6000 50  0001 C CNN "Manufacturer_Name"
+F 8 "P82B715PN" H 7500 5900 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 7500 5800 50  0001 C CNN "Allied_Number"
+F 10 "" H 7500 5700 50  0001 C CNN "Other Part Number"
+F 11 "5.08" H 7900 5600 50  0001 C CNN "Height"
+	1    6950 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L P82B715PN IC4
+U 1 1 59CD53A8
+P 6950 8250
+F 0 "IC4" H 7500 8400 50  0000 C CNN
+F 1 "P82B715PN" H 7500 7800 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 7500 7700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/p82b715.pdf" H 7500 7600 50  0001 C CNN
+F 4 "NXP - P82B715PN - IC, BUS EXTENDER, 82B715, DIP8" H 7500 7500 50  0001 C CNN "Description"
+F 5 "RS" H 7500 7400 50  0001 C CNN "Supplier_Name"
+F 6 "" H 7500 7300 50  0001 C CNN "RS Part Number"
+F 7 "NXP" H 7500 7200 50  0001 C CNN "Manufacturer_Name"
+F 8 "P82B715PN" H 7500 7100 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 7500 7000 50  0001 C CNN "Allied_Number"
+F 10 "" H 7500 6900 50  0001 C CNN "Other Part Number"
+F 11 "5.08" H 7900 6800 50  0001 C CNN "Height"
+	1    6950 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 6350 8400 8250
+Wire Wire Line
+	8400 7050 8050 7050
+Wire Wire Line
+	8400 8250 8050 8250
+Connection ~ 8400 7050
+Wire Wire Line
+	6950 7350 6600 7350
+Wire Wire Line
+	6600 7350 6600 8850
+Wire Wire Line
+	6600 8550 6950 8550
+Connection ~ 6600 8550
+Wire Wire Line
+	8200 6650 8200 7250
+Wire Wire Line
+	8050 8450 8200 8450
+Wire Wire Line
+	8200 8450 8200 7850
+Wire Wire Line
+	8200 7850 6400 7850
+Wire Wire Line
+	6950 8450 6400 8450
+Wire Wire Line
+	6950 8350 6800 8350
+Wire Wire Line
+	6800 8350 6800 8000
+Wire Wire Line
+	6800 8000 10500 8000
+Wire Wire Line
+	8050 8350 11550 8350
+$Comp
+L R R26
+U 1 1 59CD53A9
+P 8900 7750
+F 0 "R26" V 8980 7750 50  0000 C CNN
+F 1 "270" V 8900 7750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8830 7750 50  0001 C CNN
+F 3 "" H 8900 7750 50  0001 C CNN
+	1    8900 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R28
+U 1 1 59CD53AA
+P 9150 7750
+F 0 "R28" V 9230 7750 50  0000 C CNN
+F 1 "270" V 9150 7750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9080 7750 50  0001 C CNN
+F 3 "" H 9150 7750 50  0001 C CNN
+	1    9150 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 7900 8900 8000
+Connection ~ 8900 8000
+Wire Wire Line
+	9150 7900 9150 8350
+Connection ~ 9150 8350
+Wire Wire Line
+	8400 7500 9150 7500
+Wire Wire Line
+	9150 7500 9150 7600
+Connection ~ 8400 7500
+Wire Wire Line
+	8900 7600 8900 7500
+Connection ~ 8900 7500
+Wire Wire Line
+	6950 7150 6800 7150
+Wire Wire Line
+	6800 7150 6800 6800
+Wire Wire Line
+	6800 6800 10500 6800
+Wire Wire Line
+	8050 7150 11550 7150
+$Comp
+L R R25
+U 1 1 59CD53AB
+P 8900 6550
+F 0 "R25" V 8980 6550 50  0000 C CNN
+F 1 "270" V 8900 6550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8830 6550 50  0001 C CNN
+F 3 "" H 8900 6550 50  0001 C CNN
+	1    8900 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 59CD53AC
+P 9150 6550
+F 0 "R27" V 9230 6550 50  0000 C CNN
+F 1 "270" V 9150 6550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9080 6550 50  0001 C CNN
+F 3 "" H 9150 6550 50  0001 C CNN
+	1    9150 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 6700 8900 6800
+Connection ~ 8900 6800
+Wire Wire Line
+	9150 6700 9150 7150
+Connection ~ 9150 7150
+Wire Wire Line
+	8200 7250 8050 7250
+Wire Wire Line
+	9150 6350 9150 6400
+Wire Wire Line
+	8250 6350 9150 6350
+Wire Wire Line
+	8900 6400 8900 6350
+Connection ~ 8900 6350
+Text GLabel 8250 6350 0    60   Input ~ 0
++3V3
+Connection ~ 8400 6350
+Wire Wire Line
+	10500 6700 10400 6700
+Wire Wire Line
+	10400 6400 10400 7900
+Wire Wire Line
+	10400 7900 10500 7900
+Wire Wire Line
+	11200 6900 11300 6900
+Wire Wire Line
+	11300 6400 11300 8100
+Wire Wire Line
+	11300 8100 11200 8100
+Wire Wire Line
+	11200 6800 11400 6800
+Wire Wire Line
+	11400 6800 11400 8550
+Wire Wire Line
+	11400 8000 11200 8000
+Wire Wire Line
+	10500 6900 10300 6900
+Wire Wire Line
+	10300 6900 10300 8550
+Wire Wire Line
+	10300 8100 10500 8100
+Wire Wire Line
+	10300 8550 11400 8550
+Connection ~ 11400 8000
+Connection ~ 10300 8100
+Wire Wire Line
+	10400 6400 11300 6400
+Connection ~ 10400 6700
+Connection ~ 11300 6900
+Wire Wire Line
+	11550 7150 11550 6700
+Wire Wire Line
+	11550 6700 11200 6700
+Wire Wire Line
+	11550 8350 11550 7900
+Wire Wire Line
+	11550 7900 11200 7900
+Text GLabel 10850 8750 3    60   Input ~ 0
+GND
+Wire Wire Line
+	10850 8750 10850 8550
+Connection ~ 10850 8550
+Text GLabel 10850 6300 1    60   Input ~ 0
++5V
+Wire Wire Line
+	10850 6300 10850 6400
+Connection ~ 10850 6400
+Text GLabel 6400 7850 0    60   Input ~ 0
+I2C1_SDA
+Text GLabel 6400 8450 0    60   Input ~ 0
+I2C1_SCL
+Wire Wire Line
+	5850 6650 8200 6650
+Wire Wire Line
+	5750 7250 6950 7250
+Wire Wire Line
+	11500 2650 11500 5150
+Wire Wire Line
+	10500 4300 10400 4300
+Connection ~ 10400 5150
+Text GLabel 11500 2650 1    60   Input ~ 0
++12V
+$Comp
+L 54601-906WPLF J6
+U 1 1 59CD53AE
+P 10500 4200
+F 0 "J6" H 10850 4350 50  0000 C CNN
+F 1 "54601-906WPLF" H 10850 3850 50  0000 C CNN
+F 2 "54601-906WPLF:54601-906WPLF" H 10850 3750 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/c-bmj-0082-1003737.pdf" H 10850 3650 50  0001 C CNN
+F 4 "Modular Connectors / Ethernet Connectors 6P6C CAT 3 MOD JACK HORIZ. 1 PORT" H 10850 3550 50  0001 C CNN "Description"
+F 5 "RS" H 10850 3450 50  0001 C CNN "Supplier_Name"
+F 6 "" H 10850 3350 50  0001 C CNN "RS Part Number"
+F 7 "AMPHENOL FCI" H 10850 3250 50  0001 C CNN "Manufacturer_Name"
+F 8 "54601-906WPLF" H 10850 3150 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 10850 3050 50  0001 C CNN "Allied_Number"
+F 10 "" H 10850 2950 50  0001 C CNN "Other Part Number"
+F 11 "" H 11050 2850 50  0001 C CNN "Height"
+	1    10500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 54601-906WPLF J7
+U 1 1 59CD53AF
+P 10500 5050
+F 0 "J7" H 10850 5200 50  0000 C CNN
+F 1 "54601-906WPLF" H 10850 4700 50  0000 C CNN
+F 2 "54601-906WPLF:54601-906WPLF" H 10850 4600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/c-bmj-0082-1003737.pdf" H 10850 4500 50  0001 C CNN
+F 4 "Modular Connectors / Ethernet Connectors 6P6C CAT 3 MOD JACK HORIZ. 1 PORT" H 10850 4400 50  0001 C CNN "Description"
+F 5 "RS" H 10850 4300 50  0001 C CNN "Supplier_Name"
+F 6 "" H 10850 4200 50  0001 C CNN "RS Part Number"
+F 7 "AMPHENOL FCI" H 10850 4100 50  0001 C CNN "Manufacturer_Name"
+F 8 "54601-906WPLF" H 10850 4000 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 10850 3900 50  0001 C CNN "Allied_Number"
+F 10 "" H 10850 3800 50  0001 C CNN "Other Part Number"
+F 11 "" H 11050 3700 50  0001 C CNN "Height"
+	1    10500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 54601-906WPLF J8
+U 1 1 59CD53B0
+P 10500 6700
+F 0 "J8" H 10850 6850 50  0000 C CNN
+F 1 "54601-906WPLF" H 10850 6350 50  0000 C CNN
+F 2 "54601-906WPLF:54601-906WPLF" H 10850 6250 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/c-bmj-0082-1003737.pdf" H 10850 6150 50  0001 C CNN
+F 4 "Modular Connectors / Ethernet Connectors 6P6C CAT 3 MOD JACK HORIZ. 1 PORT" H 10850 6050 50  0001 C CNN "Description"
+F 5 "RS" H 10850 5950 50  0001 C CNN "Supplier_Name"
+F 6 "" H 10850 5850 50  0001 C CNN "RS Part Number"
+F 7 "AMPHENOL FCI" H 10850 5750 50  0001 C CNN "Manufacturer_Name"
+F 8 "54601-906WPLF" H 10850 5650 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 10850 5550 50  0001 C CNN "Allied_Number"
+F 10 "" H 10850 5450 50  0001 C CNN "Other Part Number"
+F 11 "" H 11050 5350 50  0001 C CNN "Height"
+	1    10500 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 54601-906WPLF J9
+U 1 1 59CD53B1
+P 10500 7900
+F 0 "J9" H 10850 8050 50  0000 C CNN
+F 1 "54601-906WPLF" H 10850 7550 50  0000 C CNN
+F 2 "54601-906WPLF:54601-906WPLF" H 10850 7450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/c-bmj-0082-1003737.pdf" H 10850 7350 50  0001 C CNN
+F 4 "Modular Connectors / Ethernet Connectors 6P6C CAT 3 MOD JACK HORIZ. 1 PORT" H 10850 7250 50  0001 C CNN "Description"
+F 5 "RS" H 10850 7150 50  0001 C CNN "Supplier_Name"
+F 6 "" H 10850 7050 50  0001 C CNN "RS Part Number"
+F 7 "AMPHENOL FCI" H 10850 6950 50  0001 C CNN "Manufacturer_Name"
+F 8 "54601-906WPLF" H 10850 6850 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 10850 6750 50  0001 C CNN "Allied_Number"
+F 10 "" H 10850 6650 50  0001 C CNN "Other Part Number"
+F 11 "" H 11050 6550 50  0001 C CNN "Height"
+	1    10500 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA1284-PU U8
+U 1 1 59CE7D5E
+P 4350 3750
+F 0 "U8" H 3500 5630 50  0000 L BNN
+F 1 "ATMEGA1284-PU" H 4750 1800 50  0000 L BNN
+F 2 "Housings_DIP:DIP-40_W15.24mm_LongPads" H 4350 3750 50  0001 C CIN
+F 3 "" H 4350 3750 50  0001 C CNN
+	1    4350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2450 3350 2450
+Wire Wire Line
+	2700 2500 2700 2450
+Connection ~ 2700 2450
+Wire Wire Line
+	2400 2850 3350 2850
+Wire Wire Line
+	2700 2800 2700 2850
+Connection ~ 2700 2850
+Wire Wire Line
+	2100 2450 1950 2450
+Wire Wire Line
+	1950 2450 1950 3000
+Wire Wire Line
+	2100 2850 1950 2850
+Connection ~ 1950 2850
+$Comp
+L GND #PWR015
+U 1 1 59CE8BC3
+P 1950 3000
+F 0 "#PWR015" H 1950 2750 50  0001 C CNN
+F 1 "GND" H 1950 2850 50  0000 C CNN
+F 2 "" H 1950 3000 50  0001 C CNN
+F 3 "" H 1950 3000 50  0001 C CNN
+	1    1950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1800 3050 5150
+Wire Wire Line
+	3050 2050 3350 2050
+Connection ~ 3050 2050
+Wire Wire Line
+	2150 5100 2150 4900
+Wire Wire Line
+	2150 4900 3050 4900
+Connection ~ 3050 4900
+Wire Wire Line
+	2350 5100 2350 4900
+Connection ~ 2350 4900
+Wire Wire Line
+	2150 5750 4350 5750
+Wire Wire Line
+	2150 5750 2150 5500
+Connection ~ 4150 5750
+Wire Wire Line
+	2350 5500 2350 5750
+Connection ~ 2350 5750
+Wire Wire Line
+	3050 5450 3050 5750
+Connection ~ 3050 5750
+$Comp
+L GND #PWR016
+U 1 1 59CE964C
+P 3050 5750
+F 0 "#PWR016" H 3050 5500 50  0001 C CNN
+F 1 "GND" H 3050 5600 50  0000 C CNN
+F 2 "" H 3050 5750 50  0001 C CNN
+F 3 "" H 3050 5750 50  0001 C CNN
+	1    3050 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1500 3050 1350
+Wire Wire Line
+	3050 1350 8700 1350
+Wire Wire Line
+	4350 1350 4350 1750
+Wire Wire Line
+	4150 1750 4150 1350
+Connection ~ 4150 1350
+$Comp
+L VCC #PWR017
+U 1 1 59CE9843
+P 4150 1350
+F 0 "#PWR017" H 4150 1200 50  0001 C CNN
+F 1 "VCC" H 4150 1500 50  0000 C CNN
+F 2 "" H 4150 1350 50  0001 C CNN
+F 3 "" H 4150 1350 50  0001 C CNN
+	1    4150 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 1350
+$Comp
+L GND #PWR018
+U 1 1 59CE99C3
+P 10400 5700
+F 0 "#PWR018" H 10400 5450 50  0001 C CNN
+F 1 "GND" H 10400 5550 50  0000 C CNN
+F 2 "" H 10400 5700 50  0001 C CNN
+F 3 "" H 10400 5700 50  0001 C CNN
+	1    10400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 59CE99FD
+P 10550 8550
+F 0 "#PWR019" H 10550 8300 50  0001 C CNN
+F 1 "GND" H 10550 8400 50  0000 C CNN
+F 2 "" H 10550 8550 50  0001 C CNN
+F 3 "" H 10550 8550 50  0001 C CNN
+	1    10550 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 59CE9A4A
+P 6600 8850
+F 0 "#PWR020" H 6600 8600 50  0001 C CNN
+F 1 "GND" H 6600 8700 50  0000 C CNN
+F 2 "" H 6600 8850 50  0001 C CNN
+F 3 "" H 6600 8850 50  0001 C CNN
+	1    6600 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 59CE9B09
+P 8700 5750
+F 0 "#PWR021" H 8700 5500 50  0001 C CNN
+F 1 "GND" H 8700 5600 50  0000 C CNN
+F 2 "" H 8700 5750 50  0001 C CNN
+F 3 "" H 8700 5750 50  0001 C CNN
+	1    8700 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3850 5750 7250
+Wire Wire Line
+	5750 3850 5350 3850
+Wire Wire Line
+	5350 3950 5850 3950
+Wire Wire Line
+	5850 3950 5850 6650
+Wire Wire Line
+	5350 4750 7500 4750
+Wire Wire Line
+	7500 4750 7500 4150
+Wire Wire Line
+	7500 4150 8300 4150
+Wire Wire Line
+	8300 4450 7600 4450
+Wire Wire Line
+	7600 4450 7600 4850
+Wire Wire Line
+	7600 4850 5350 4850
+Wire Wire Line
+	8300 4250 7700 4250
+Wire Wire Line
+	7700 4250 7700 5450
+Wire Wire Line
+	8300 4350 7700 4350
+Connection ~ 7700 4350
+$Comp
+L Conn_02x05_Odd_Even J5
+U 1 1 59CEC76C
+P 6650 3250
+F 0 "J5" H 6700 3550 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 6700 2950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x05_Pitch2.54mm" H 6650 3250 50  0001 C CNN
+F 3 "" H 6650 3250 50  0001 C CNN
+	1    6650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3050 5950 3050
+Wire Wire Line
+	5950 3050 5950 4050
+Wire Wire Line
+	5950 4050 5350 4050
+Wire Wire Line
+	6450 3150 6050 3150
+Wire Wire Line
+	6050 3150 6050 4250
+Wire Wire Line
+	6050 4250 5350 4250
+Wire Wire Line
+	6450 3250 6150 3250
+Wire Wire Line
+	6150 3250 6150 4150
+Wire Wire Line
+	6150 4150 5350 4150
+Wire Wire Line
+	6450 3450 6250 3450
+Wire Wire Line
+	6250 3450 6250 4350
+Wire Wire Line
+	6250 4350 5350 4350
+Wire Wire Line
+	6950 3050 7150 3050
+Wire Wire Line
+	7150 3050 7150 3600
+Wire Wire Line
+	6950 3450 7150 3450
+Connection ~ 7150 3450
+$Comp
+L GND #PWR022
+U 1 1 59CECBC2
+P 7150 3600
+F 0 "#PWR022" H 7150 3350 50  0001 C CNN
+F 1 "GND" H 7150 3450 50  0000 C CNN
+F 2 "" H 7150 3600 50  0001 C CNN
+F 3 "" H 7150 3600 50  0001 C CNN
+	1    7150 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR023
+U 1 1 59CECBFC
+P 7300 3150
+F 0 "#PWR023" H 7300 3000 50  0001 C CNN
+F 1 "VCC" H 7300 3300 50  0000 C CNN
+F 2 "" H 7300 3150 50  0001 C CNN
+F 3 "" H 7300 3150 50  0001 C CNN
+	1    7300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3150 6950 3150
+Wire Wire Line
+	6950 3250 7050 3250
+Wire Wire Line
+	7050 3250 7050 1750
+Wire Wire Line
+	7050 1750 3300 1750
+Wire Wire Line
+	3300 1750 3300 2050
+Connection ~ 3300 2050
+Text GLabel 5600 2050 2    60   BiDi ~ 0
+GPIO1_0
+Text GLabel 5600 2150 2    60   BiDi ~ 0
+GPIO1_1
+Text GLabel 5600 2250 2    60   BiDi ~ 0
+GPIO1_2
+Text GLabel 5600 2350 2    60   BiDi ~ 0
+GPIO1_3
+Text GLabel 5600 2450 2    60   BiDi ~ 0
+GPIO1_4
+Text GLabel 5600 2550 2    60   BiDi ~ 0
+GPIO1_5
+Text GLabel 5600 2650 2    60   BiDi ~ 0
+GPIO1_6
+Text GLabel 5600 2750 2    60   BiDi ~ 0
+GPIO1_7
+Wire Wire Line
+	5350 2050 5600 2050
+Wire Wire Line
+	5600 2150 5350 2150
+Wire Wire Line
+	5350 2250 5600 2250
+Wire Wire Line
+	5600 2350 5350 2350
+Wire Wire Line
+	5350 2450 5600 2450
+Wire Wire Line
+	5600 2550 5350 2550
+Wire Wire Line
+	5350 2650 5600 2650
+Wire Wire Line
+	5600 2750 5350 2750
+Text GLabel 6150 4950 2    60   Input ~ 0
+UART1_TXD
+Text GLabel 6150 5050 2    60   Output ~ 0
+UART1_RXD
+Wire Wire Line
+	5350 4950 6150 4950
+Wire Wire Line
+	6150 5050 5350 5050
+Wire Wire Line
+	7700 5450 5350 5450
+$EndSCHEMATC

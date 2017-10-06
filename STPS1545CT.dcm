@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STPS1545CT
+D STPS1545CT, Dual Schottky Diode,  7.5A max, 45V Common Cathode, Dual, 3-Pin, TO-220AB
+K
+F http://www.st.com/web/en/resource/technical/document/datasheet/CD00004902.pdf
+$ENDCMP
+#
+#End Doc Library

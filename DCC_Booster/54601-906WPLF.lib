@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 54601-906WPLF
+#/556339/19798/2.14/6/4/Connector
+DEF 54601-906WPLF J 0 30 Y Y 1 F N
+F0 "J" 350 150 50 H V C CNN
+F1 "54601-906WPLF" 350 -350 50 H V C CNN
+F2 "54601-906WPLF" 350 -450 50 H I C CNN
+F3 "http://www.mouser.com/ds/2/18/c-bmj-0082-1003737.pdf" 350 -550 50 H I C CNN
+F4 "Modular Connectors / Ethernet Connectors 6P6C CAT 3 MOD JACK HORIZ. 1 PORT" 350 -650 50 H I C CNN "Description"
+F5 "RS" 350 -750 50 H I C CNN "Supplier_Name"
+F6 "" 350 -850 50 H I C CNN "RS Part Number"
+F7 "AMPHENOL FCI" 350 -950 50 H I C CNN "Manufacturer_Name"
+F8 "54601-906WPLF" 350 -1050 50 H I C CNN "Manufacturer_Part_Number"
+F9 "" 350 -1150 50 H I C CNN "Allied_Number"
+F10 "" 350 -1250 50 H I C CNN "Other Part Number"
+F11 "" 550 -1350 50 H I C CNN "Height"
+DRAW
+S 200 100 500 -300 0 0 10 f
+X 1 1 0 0 200 R 50 50 0 0 U
+X 2 2 0 -100 200 R 50 50 0 0 U
+X 3 3 0 -200 200 R 50 50 0 0 U
+X 4 4 700 0 200 L 50 50 0 0 U
+X 5 5 700 -100 200 L 50 50 0 0 U
+X 6 6 700 -200 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
+#End Library
